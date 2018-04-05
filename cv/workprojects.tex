@@ -1,0 +1,80 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Notable work projects}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Delphi}
+    {\color{awesome-skyblue}\href{http://loviotvet.ru}{\underline{Loviotvet.ru}}}
+    {}
+    {2010 - 2012}
+    {
+      \begin{cvitems} % Description(s) of experience/contributions/knowledge
+      	\item Smart calculator for solving and simplifying math expressions and equations
+        \item Self-implemented solving engine based on {\color{awesome-skyblue}\href{https://en.wikipedia.org/wiki/Reverse_Polish_notation}{reverse polish notation}} builds a simplifications tree which allows displaying a solution in step-by-step fashion
+        \item Supported math operations:
+          \begin{itemize}
+              \item Common and decimal fraction operations
+              \item Polynomial operations including division
+              \item Solving linear and square equations
+          \end{itemize}
+        \item A web service based on solving engine exposes RESTful API and serves requests from mobile clients and web application
+        \item Freeware desktop, mobile and web clients were released for CIS market. Mobile clients have 500k+ installs, the service app served more than 12 millions of requests
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Java, Javascript, Bootstrap}
+    {An application for processing video content}
+    {}
+    {2017}
+    {
+      \begin{cvitems} % Description(s) of experience/contributions/knowledge
+      	\item A client-server application for processing (cutting/merging/converting) video content. Typical usage is to create highlights clip from a show or to cut out ads from a broadcast record
+        \item Architecture:
+          \begin{itemize}
+              \item Backend - Java, FFmpeg
+              \item Frontend - Javascript, Bootstrap, jQuery
+          \end{itemize}
+		\item Backend service exposes RESTful API which serves requests from web app UI views
+        \item Supported video sources:
+          \begin{itemize}
+              \item Direct URL
+              \item Torrent file
+              \item Youtube video URL
+          \end{itemize}
+      \end{cvitems}
+    }
+    
+%---------------------------------------------------------
+  \cventry
+    {Delphi, C++}
+    {Plugin player}
+    {}
+    {2015}
+    {
+      \begin{cvitems} % Description(s) of experience/contributions/knowledge
+      	\item Plugin which allows watching videos though p2p (torrent) protocol directly in browser
+        \item The application consists of a "host" application which loads torrents and communicates with browsers. There are a number of standards for plugin implementation, so the application implements most popular ones:
+          \begin{itemize}
+              \item PepperAPI (Chrome, WebKit-based browsers)
+              \item NPAPI (Firefox, pre-WebKit Opera)
+              \item ActiveX (Internet Explorer)
+          \end{itemize}
+        \item "Host" application loads torrents using Delphi wrapper for libtorrent C++ library
+        \item "Host" application communicates with plugins using Windows Messages
+        \item UI for plugins is implemented with a Skinbuilder UI framework which is built on top of WinAPI
+      \end{cvitems}
+    }
+    
+%---------------------------------------------------------
+    
+\end{cventries}

@@ -1,0 +1,5 @@
+# Don't let git change default linebreaks
+.gitattributes text eol=lf
+*.tex text eol=lf
+*.sty text eol=lf
+*.cls text eol=lf
