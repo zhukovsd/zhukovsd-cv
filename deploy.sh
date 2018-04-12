@@ -62,5 +62,8 @@ git status
 
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
+eval `ssh-agent -s`
+ssh-add ~/.ssh/id_rsa
+
 # Now that we're all set up, we can push.
 git push ${SSH_REPO} ${TARGET_BRANCH}
