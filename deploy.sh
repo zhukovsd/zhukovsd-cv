@@ -5,9 +5,10 @@ TARGET_BRANCH="gh-pages"
 OUT_DIR="gh-pages"
 
 IP=`ip addr show | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'`
+AUTHOR_EMAIL=`git log -1 --pretty=format:'%an'`
 
 git config --global user.name "Jenkins@$IP"
-git config --global user.email "$COMMIT_AUTHOR_EMAIL"
+git config --global user.email "$AUTHOR_EMAIL"
 
 # Save some useful information
 REPO=`git config remote.origin.url`

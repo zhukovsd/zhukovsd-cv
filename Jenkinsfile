@@ -10,7 +10,7 @@ pipeline {
       steps {
         sh '''
 			chmod a+x deploy.sh
-			sh $WORKSPACE/deploy.sh
+			bash $WORKSPACE/deploy.sh
 		'''
       }
     }	
