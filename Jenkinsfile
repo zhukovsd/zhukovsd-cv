@@ -8,7 +8,10 @@ pipeline {
     }
     stage('deploy') {
       steps {
-        sh 'deploy.sh'
+        sh '''
+			chmod a+x deploy.sh
+			sh deploy.sh
+		'''
       }
     }	
   }
