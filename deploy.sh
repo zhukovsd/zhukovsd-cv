@@ -15,6 +15,8 @@ REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
 
+# Remove gh-pages just in case it exists (it may if Jenkins re-runs job in the same workspace directory)
+rm -rf ${OUT_DIR}
 # Clone the existing gh-pages for this repo into out/
 # Create a new empty branch if gh-pages doesn't exist yet (should only happen on first deply)
 git clone ${REPO} ${OUT_DIR}
