@@ -9,9 +9,9 @@ pipeline {
     stage('deploy') {
       steps {
         sh '''
-			chmod a+x deploy.sh
-			bash $WORKSPACE/deploy.sh
-		'''
+	  chmod a+x deploy.sh
+	  bash $WORKSPACE/deploy.sh
+	'''
       }
     }	
   }
