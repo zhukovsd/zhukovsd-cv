@@ -42,6 +42,7 @@ rm -rf ./.idea/*
 
 cd ..
 cp *.pdf ${OUT_DIR}/
+cp *.png ${OUT_DIR}/
 
 cd ${OUT_DIR}
 
