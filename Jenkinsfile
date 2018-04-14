@@ -3,7 +3,10 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'xelatex cv.tex'
+        sh '''
+	  chmod a+x build.sh
+	  bash $WORKSPACE/build.sh
+	'''
       }
     }
     stage('deploy') {
