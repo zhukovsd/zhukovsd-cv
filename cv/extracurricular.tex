@@ -10,38 +10,38 @@
 \begin{cventries}
 
 %---------------------------------------------------------
-  \cventry
-    {Java, Graph theory, Servlet API}
-    {Maze generator}
-    {\color{awesome-skyblue}\href{https://github.com/zhukovsd/maze-generator}{\underline{GitHub project}}}
-    {2015 - 2016}
-    {
-      \begin{cvitems} % Description(s) of experience/contributions/knowledge
-        \item {\color{awesome-skyblue}{Web application - \href{http://zhukovsd.github.io/maze-generator/}{http://zhukovsd.github.io/maze-generator/}}}
-        \item {Algorithm works with planar graphs, which allows building mazes of arbitrary shape}
-        \item Finished generator was user during the implementation of maze solving Android game
-      \end{cvitems}
-    }
+%  \cventry
+%    {Java, Graph theory, Servlet API}
+%    {Maze generator}
+%    {\color{awesome-skyblue}\href{https://github.com/zhukovsd/maze-generator}{\underline{GitHub project}}}
+%    {2015 - 2016}
+%    {
+%      \begin{cvitems} % Description(s) of experience/contributions/knowledge
+%        \item {\color{awesome-skyblue}{Web application - \href{http://zhukovsd.github.io/maze-generator/}{http://zhukovsd.github.io/maze-generator/}}}
+%        \item {Algorithm works with planar graphs, which allows building mazes of arbitrary shape}
+%        \item Finished generator was user during the implementation of maze solving Android game
+%      \end{cvitems}
+%    }
 
 %---------------------------------------------------------
-  \cventry
-    {Java, MongoDB, concurrency, web sockets, HTML5}
-    {Multiplayer minesweeper on infinite grid}
-    {\color{awesome-skyblue}\href{https://github.com/zhukovsd/endless-field}{\underline{GitHub project}}}
-    {2016}
-    {
-      \begin{cvitems} % Description(s) of experience/contributions/knowledge
-        \item {\color{awesome-skyblue}{Web application - \href{http://5.101.123.222:8080/online-minesweeper/}{http://5.101.123.222:8080/online-minesweeper/}}}
-        \item {Backend - JavaEE application, Frontend - HTML5/JS/Canvas, communication protocols - HTTP, WebSocket}
-        \item {The grid is conventionally infinite and lazy-generated. A single unit is a chunk - an area of NxM cells}
-        \item A chunk is a unit of every internal interaction within the application:
-        \begin{itemize}
-			\item Cells fetching from DB happens by indexed chunkID field
-			\item Fine-grained locking mechanism locks the field by chunks
-            \item Field area requesting by clients
-		\end{itemize}
-      \end{cvitems}
-    }
+%  \cventry
+%    {Java, MongoDB, concurrency, web sockets, HTML5}
+%    {Multiplayer minesweeper on infinite grid}
+%    {\color{awesome-skyblue}\href{https://github.com/zhukovsd/endless-field}{\underline{GitHub project}}}
+%    {2016}
+%    {
+%      \begin{cvitems} % Description(s) of experience/contributions/knowledge
+%        \item {\color{awesome-skyblue}{Web application - \href{http://5.101.123.222:8080/online-minesweeper/}{http://5.101.123.222:8080/online-minesweeper/}}}
+%        \item {Backend - JavaEE application, Frontend - HTML5/JS/Canvas, communication protocols - HTTP, WebSocket}
+%        \item {The grid is conventionally infinite and lazy-generated. A single unit is a chunk - an area of NxM cells}
+%        \item A chunk is a unit of every internal interaction within the application:
+%        \begin{itemize}
+%			\item Cells fetching from DB happens by indexed chunkID field
+%			\item Fine-grained locking mechanism locks the field by chunks
+%            \item Field area requesting by clients
+%		\end{itemize}
+%      \end{cvitems}
+%    }
     
 %---------------------------------------------------------
   \cventry
@@ -51,7 +51,7 @@
     {2018}
     {
       \begin{cvitems} % Description(s) of experience/contributions/knowledge
-        \item {Web application - {\color{awesome-skyblue}\href{http://88.99.12.213/}{http://88.99.12.213/}}}
+        \item {Running instance of the app - {\color{awesome-skyblue}\href{http://88.99.12.213/}{http://88.99.12.213/}}}
         \item {A simple 1-minute typing speed test with frontend built with ES6/Pug.js. Each test result gets submitted to the backend (built with Kotlin/Spring) which responds with player's placement and stores typing speed characteristics (characters per minute, typos count) to the persistent Redis DB}
         \item {The app runs two microservices, the first one encapsulates Tomcat, which runs Spring application. The second microservice runs a Redis instance}
         \item {CircleCI pipeline builds the app (frontend with Webpack and backend with Maven) and deploys it to the remote Swarm cluster}
